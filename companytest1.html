@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+     <!--question 4//-->
+    <script>
+function validateform(){
+    var x=document.forms["myform"] ["firstname"].value;
+    if(x==""){
+        alert("name must be filled");
+        return false;
+    }
+}
+
+
+    </script>
+
+    
+     <p>ques 4</p>
+ <form action="" name="myform">
+<input type="text" name="firstname" id="check1" > <br><br>
+<input type="checkbox" id="check"> <br>
+<button onclick="validateform()">submit</button>
+
+
+
+ </form>
+
+
+
+     <!--question 6//-->
+    <p>answer6</p>
+    <div class="box" style="border: 2px solid black; height: 100px; width: 100px; display: block; margin-left: auto; margin-right: auto; ">
+
+
+    </div>
+    
+
+    
+    
+    
+    <!--question 5//-->
+    
+    <p>answer5</p>
+    
+  
+    <div class="test" style="border: 2px solid black ; width: 10%; padding: 5px; letter-spacing: 5px; text-align: center;" > javascript developer </div>
+</body>
+
+
+
+
+<br><br>
+
+
+
+<script>
+    //question 8//
+var obj =[
+    {
+        'id':4 ,
+        "name":"abc",
+    },
+    {
+        'id':10 ,
+        "name":"ab2",
+    }, {
+        'id':5 ,
+        "name":"abc3",
+    }, {
+        'id':6 ,
+        "name":"abc5",
+    }
+]
+ 
+ obj.sort(function(a,b){
+     return(a.id-b.id);
+ }).sort(function(a,b){
+     return (a.name-b.name);
+ });
+
+
+</script>
+
+
+
+<br><br>
+
+<script>
+    
+
+
+
+
+    
+    // question 1//
+ 
+ // arrray//
+ // it is an special variable which can store more than one value like 
+ //var frnds=["arjun","gaurav","sorav"]//
+ 
+ function even(){
+     var arr =[1,2,3,4,5,6,7,8];
+     var i;
+     for(i=0;i<arr.length;i++){
+         if(arr[i]%2===0){
+             document.write(arr[i])
+         }
+     }
+ }
+ even();
+ 
+    
+ 
+ 
+ 
+ 
+     </script>
+
+
+    <!--question 7-->
+
+    <script>
+var url ="www.example.com/api/get/1";
+
+  var xhttp = new XMLHttpRequest();
+
+  xhttp.open("GET", url, true);
+  
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    let result= document.getElementById("result");
+    result.innerHTML = this.responseText;
+    }
+  
+ 
+  xhttp.send();
+}
+    </script>
+
+
+<script>
+
+    // question 2//
+
+    public static int maxones(int[] arr){
+        int count =0;
+        int max= 0;
+        for (int i=0; i<arr.length; i++){
+            if(arr[i]==0)
+            count=0;
+            else
+            count++
+            max=count>max? count :max;
+        }
+        return max;
+    }
+
+</script>
+
+
+</html>
